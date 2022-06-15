@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/Assets/style.css" />
+    <title>Bookshelf Apps</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>Bookshelf Apps</h2>
+      </nav>
+    </header>
+
+    <main>
+      <div class="body-content">
+        <div class="body-inside">
+          <div class="title">
+            <h3 class="clr clrs">Masukkan Buku Baru</h3>
+          </div>
+
+          <div>
+            <form id="inputForm">
+              <div class="parent-input">
+                <label class="clr" for="judulBuku">Judul</label>
+                <div>
+                  <input id="judulBuku" class="inputan" type="text" required />
+                </div>
+              </div>
+              <div class="parent-input">
+                <label class="clr" for="penulisBuku">Penulis</label>
+                <div>
+                  <input
+                    id="penulisBuku"
+                    class="inputan"
+                    type="text"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="parent-input">
+                <label class="clr" for="tanggalBuku">Tahun</label>
+                <div>
+                  <input
+                    id="tanggalBuku"
+                    class="inputan"
+                    type="number"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="radio-button">
+                <label class="clr" style="margin-right: 5px" for="checkBuku"
+                  >Selesai dibaca</label
+                >
+                <input id="checkBuku" type="checkbox" />
+              </div>
+
+              <div>
+                <button id="submitForm" type="submit" class="btn-input">
+                  Masukkan Buku ke rak
+                  <b> Belum selesai dibaca </b>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="body_search">
+        <div class="search">
+          <div class="inside_search">
+            <h4>Cari Buku (Opsional)</h4>
+            <form action="">
+              <div class="parent-searching">
+                <div class="searching">
+                  <p>Judul</p>
+                  <input type="text" class="search_input" id="" />
+                  <button class="search_button">Cari</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="body-answer">
+        <div class="belum-dibaca">
+          <h4>Belum selesai dibaca</h4>
+          <div id="unRead" class="unit_book"></div>
+        </div>
+      </div>
+
+      <div class="body-answer">
+        <div class="sudah-dibaca">
+          <h4>Selesai dibaca</h4>
+          <div id="doneRead" class="unit_book"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container-footer">
+        <h4>@FAL</h4>
+        <p>Fahmi Ali Husni</p>
+      </div>
+    </footer>
+    <script src="/Assets/script.js"></script>
+  </body>
+</html>
